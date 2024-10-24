@@ -1,0 +1,143 @@
+:root {
+  --white: #ffffff;
+  --green: #74b71b;
+  --green-fonts: #76b900;
+  --black: #000000;
+  --dull-gray: #747474;
+  --footer-gray: #666666;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  font-family: sans-serif;
+}
+
+/* header section start */
+.header-section {
+  background-color: var(--white);
+  margin: 0 214px 0 110px;
+}
+
+.navbar {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .navbar-left-section {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar .navbar-left-section .brand {
+    width: 115px;
+    height: 28px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.navbar .navbar-left-section .nav-links,
+.navbar .navbar-right-section .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.nav-links li{
+    font-size: 0.98rem;
+    opacity: 55%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.nav-links li:hover{
+    opacity: 80%;
+}
+
+.navbar .navbar-right-section {
+  display: flex;
+}
+
+.navbar .navbar-right-section .search-user {
+  display: flex;
+  gap: 16px;
+  margin-left: 18px;
+}
+
+.navbar .navbar-right-section .search-user .search,
+.navbar .navbar-right-section .search-user .user {
+  width: 20px;
+  height: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+/* header section end */
+
+
+/* hero section start  */
+.hero-section{
+    display: flex;
+    gap: 18px;
+}
+.section-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:22px;
+    padding: 110px 0 110px 110px;
+    
+    button{
+        background-color: var(--green);
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: fit-content;
+        padding: 16px;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+    button:hover{
+        background-color: #92e600;
+    }
+}
+.section-left .sub-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.section-left .heading{
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+.section-left .description{
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+.section-right{
+    flex: 1;
+}
+.section-right .images-wrapper{
+    display: flex;
+    gap: 18px;
+}
+.person-image{
+    width: 337px;
+    height: 572px;
+    img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+}
+/* hero section end  */
