@@ -5,6 +5,9 @@
   --black: #000000;
   --dull-gray: #747474;
   --footer-gray: #666666;
+
+  --commom-margin-left: 8.1vw;
+  --common-gap: 24px;
 }
 
 * {
@@ -21,7 +24,7 @@ body {
 /* header section start */
 .header-section {
   background-color: var(--white);
-  margin: 0 11.9vw 0 8.1vw;
+  margin: 0 11.9vw 0 var(--commom-margin-left);
 
 }
 
@@ -91,7 +94,7 @@ body {
 .hero-section {
   display: flex;
   gap: 18px;
-  padding: 5.2vw 0 0 8.1vw;
+  padding: 5.2vw 0 0 var(--commom-margin-left);
   box-sizing: border-box;
 }
 .section-left {
@@ -141,7 +144,7 @@ body {
 /* hero section end  */
 
 .hero-section-indicators {
-  margin: 5.2vw 11.9vw 0 8.1vw;
+  margin: 5.2vw 11.9vw 0 var(--commom-margin-left);
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -176,3 +179,140 @@ body {
   font-size: 0.98rem;
   line-height: 1.6;
 }
+
+
+/* explore ribbon start   */
+.explore-ribbon{
+  background-color: var(--black);
+  margin: 2.8rem 0;
+}
+.content-container{
+  background-image: url("../images/NIM-API-Catalog-banner-sm-offset-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin: 3.2rem 0; 
+  padding: 4vh 11.9vw 0 var(--commom-margin-left);
+  color: var(--white);
+  h1{
+    font-size: 36px;
+    width: 600px;
+    font-weight: 700;
+    line-height: 1.25em;
+  }
+  p{
+    padding: 10px 0;
+    display: block;
+    font-size: 15px;
+    line-height: 1.666em;
+    width: 600px;
+  }
+  .explore-link{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+}
+/* explore ribbon end   */
+
+/* courosals styles start  */
+.courosal-section{
+  padding: 0 0 0 var(--commom-margin-left);
+  max-width: 100%;
+}
+
+.courosal-section .section-title{
+  display: block;
+  h1{
+    margin: 1.1rem 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.slider{
+  position: static;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  overflow: scroll hidden;
+  scroll-behavior: smooth;
+  gap: var(--common-gap);
+  padding: 14px 0;
+}
+
+.slider .section-introduction{
+  width: 500px;
+  padding: 8px 0;
+  p{
+    line-height: 1.666em;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .links{
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    i{
+      color: var(--green);
+      padding-right: 8px;
+    }
+  }
+}
+
+.slider .cards-wrapper{
+  height: 506px;
+  display: flex;
+  gap: var(--common-gap);
+}
+
+.slider .cards-wrapper .card{
+  width: 400px;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #4d4d4d55, 0 0 8px #4e4e4e40;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.slider .cards-wrapper .card:hover{
+  box-shadow: 0 0 18px #4d4d4d55, 0 0 18px #4e4e4e40;
+}
+
+.card .card-image{
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.card .card-contents{
+  padding: 0 18px;
+  .card-sub-heading{
+    margin: 30px 0;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  h3{
+    margin: 0 0 30px 0;
+    font-size: 20px;
+  }
+  p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.666em;
+  }
+}
+/* artificial intelligence  */
+  /* .artificial-Intelligence{
+    
+  } */
+
+/* courosals styles end  */
