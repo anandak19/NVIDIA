@@ -1,6 +1,8 @@
 :root {
   --white: #ffffff;
   --green: #74b71b;
+  --hover-green: #92e600;
+  --hover-dark-green: #649e00;
   --green-fonts: #76b900;
   --black: #000000;
   --dull-gray: #747474;
@@ -24,8 +26,12 @@ body {
 /* header section start */
 .header-section {
   background-color: var(--white);
-  margin: 0 11.9vw 0 var(--commom-margin-left);
-
+  padding: 0 11.9vw 0 var(--commom-margin-left);
+  border-bottom: 1px solid #e6e6e66c;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .navbar {
@@ -113,7 +119,7 @@ body {
     transition: background-color 0.3s ease;
   }
   button:hover {
-    background-color: #92e600;
+    background-color: var(--hover-green);
   }
 }
 .section-left .sub-heading {
@@ -184,7 +190,7 @@ body {
 /* explore ribbon start   */
 .explore-ribbon{
   background-color: var(--black);
-  margin: 2.8rem 0;
+  margin: 2.8rem 0 0 0;
 }
 .content-container{
   background-image: url("../images/NIM-API-Catalog-banner-sm-offset-desktop.jpg");
@@ -219,10 +225,10 @@ body {
 }
 /* explore ribbon end   */
 
-/* courosals styles start  */
+/* courosals slider styles start  */
 .courosal-section{
   padding: 0 0 0 var(--commom-margin-left);
-  max-width: 100%;
+  margin: 2.8rem 0;
 }
 
 .courosal-section .section-title{
@@ -238,11 +244,33 @@ body {
   position: static;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: auto;
-  overflow: scroll hidden;
+  /* grid-template-columns: auto; */
+  overflow-x: scroll;
   scroll-behavior: smooth;
   gap: var(--common-gap);
-  padding: 14px 0;
+  /* padding: 14px 0 14px 0; */
+  padding: 14px 28px var(--common-gap) 0;
+
+}
+
+.slider::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+  background-color: #f0f0f0;
+  margin-right: var(--commom-margin-left);
+}
+
+.slider::-webkit-scrollbar-track {
+  background-color: #c0c0c0;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 4px; 
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-dark-green); 
 }
 
 .slider .section-introduction{
@@ -266,13 +294,13 @@ body {
 }
 
 .slider .cards-wrapper{
-  height: 506px;
+  height: 536px;
   display: flex;
   gap: var(--common-gap);
 }
 
 .slider .cards-wrapper .card{
-  width: 400px;
+  width: 388px;
   height: 100%;
   border-radius: 2px;
   box-shadow: 0 0 8px #4d4d4d55, 0 0 8px #4e4e4e40;
@@ -315,4 +343,4 @@ body {
     
   } */
 
-/* courosals styles end  */
+/* courosals slider styles end  */
