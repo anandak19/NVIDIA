@@ -9,14 +9,14 @@
   --footer-gray: #666666;
 
   --commom-margin-left: 8.1vw;
-  --common-gap: 24px;
+  --common-gap: 30px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid; */
+  /* border: 1px solid #919191; */
 }
 
 body {
@@ -341,4 +341,108 @@ body {
 /* courosals slider styles end  */
 
 /* footer styles start  */
+.footer-section .footer-navigations{
+  background-color: var(--black);
+  padding: 0 var(--commom-margin-left);
+}
+
+.footer-navigations .navigations-wrapper{
+  padding: 3.5% 0;
+  color: #f0f0f0;
+}
+
+.navigations-wrapper .general-nav-links{
+  display: flex;
+  gap: var(--common-gap);
+  justify-content: space-between ;
+}
+
+.general-nav-links .links-section{
+  flex: 1;
+  min-width: 0;
+  .section-title{
+    border-bottom: 1px solid var(--footer-gray);
+    padding-bottom: 12px;
+    h2{
+      color: var(--white);
+    }
+  }
+  .section-links{
+    padding: 18px 0;
+    ul{
+      list-style: none;
+      li{
+        color: var(--green-fonts);
+        margin-bottom: 20px;
+        font-size: 0.98rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.navigations-wrapper .socials-links{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  height: 50px;
+}
+
+.socials-links .email-container{
+  display: flex;
+  gap: var(--common-gap);
+  height: 100%;
+  span{
+    margin: auto;
+    font-size: 18px;
+  }
+  .email-image{
+    height: 100%;
+    img{
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  button{
+    background-color: var(--hover-dark-green);
+    padding: 13px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25em;
+    transition: background-color 0.3s ease;
+  }
+  button:hover{
+    background-color: var(--hover-green);
+  }
+}
+
+.socials-links .other-socials{
+  display: flex;
+  height: 100%;
+  span{
+    color: var(--footer-gray);
+    font-weight: 300;
+    font-size: 1pc;
+    margin: auto 30px auto 0;
+  }
+  .socials-icons{
+    display: flex;
+    gap: 18px;
+    margin: auto;
+    height: 40px;
+    .icon{
+      margin: auto;
+      i{
+        font-size: 24px;
+        color: var(--footer-gray);
+        transition: color 0.3s ease-in;
+      }
+      i:hover{
+        color: var(--white);
+      }
+    }
+  }
+}
 /* footer styles end  */
